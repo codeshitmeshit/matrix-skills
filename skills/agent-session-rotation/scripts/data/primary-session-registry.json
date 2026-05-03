@@ -1,0 +1,123 @@
+{
+  "community-manager": {
+    "agent_id": "community-manager",
+    "current_primary_session_id": "fedaccd3-506a-42bc-bf83-3cbb87fae1fb.trajectory",
+    "current_primary_session_key": "agent:community-manager:session:fedaccd3-506a-42bc-bf83-3cbb87fae1fb.trajectory",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-04-28T19:30:41.472823+00:00",
+    "version": 10
+  },
+  "debug-master": {
+    "agent_id": "debug-master",
+    "current_primary_session_id": "9f60ed72-9922-416f-be8a-dcd5cbf5c24f",
+    "current_primary_session_key": "agent:debug-master:feishu:direct:ou_c1d90aaea0a89772b03b73056e30dafe",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-04-19T18:08:09.944536+00:00",
+    "version": 1
+  },
+  "dev-assistant": {
+    "agent_id": "dev-assistant",
+    "current_primary_session_id": "7ebd7875-2f3a-4106-9876-d6c18d268efa.trajectory",
+    "current_primary_session_key": "agent:dev-assistant:session:7ebd7875-2f3a-4106-9876-d6c18d268efa.trajectory",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-05-02T06:34:45.075560+00:00",
+    "version": 2
+  },
+  "matrix-briefing": {
+    "agent_id": "matrix-briefing",
+    "current_primary_session_id": "a7fa4c30-2fe2-4b4a-b845-73111047e409",
+    "current_primary_session_key": "agent:matrix-briefing:main",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-04-19T18:08:09.944536+00:00",
+    "version": 1
+  },
+  "matrix-code": {
+    "agent_id": "matrix-code",
+    "current_primary_session_id": "facbc508-6a0d-4072-ad46-e200b237ac24",
+    "current_primary_session_key": "agent:matrix-code:main",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-04-19T18:08:09.944536+00:00",
+    "version": 1
+  },
+  "matrix-core": {
+    "agent_id": "matrix-core",
+    "current_primary_session_id": "600bf7d6-0fa7-4195-9393-d01cf90702a5",
+    "current_primary_session_key": "agent:matrix-core:main",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-04-19T18:08:09.944536+00:00",
+    "version": 1
+  },
+  "matrix-devops": {
+    "agent_id": "matrix-devops",
+    "current_primary_session_id": "c30cb6ea-2547-4e91-a28c-8320c4ea5360",
+    "current_primary_session_key": "agent:matrix-devops:subagent:45b28086-947b-4dc3-8791-e447ccc8b970",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-04-19T18:08:09.944536+00:00",
+    "version": 1
+  },
+  "matrix-doc": {
+    "agent_id": "matrix-doc",
+    "current_primary_session_id": "98b7d305-fdaa-4bb4-8a02-d22f0ea15314.trajectory",
+    "current_primary_session_key": "agent:matrix-doc:session:98b7d305-fdaa-4bb4-8a02-d22f0ea15314.trajectory",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-04-29T19:30:24.873366+00:00",
+    "version": 12
+  },
+  "matrix-hub": {
+    "agent_id": "matrix-hub",
+    "current_primary_session_id": "67d765aa-bfff-4338-bc7b-f9736ae57a53",
+    "current_primary_session_key": "agent:matrix-hub:main",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-04-19T18:08:09.944536+00:00",
+    "version": 1
+  },
+  "matrix-quality": {
+    "agent_id": "matrix-quality",
+    "current_primary_session_id": "c6082832-2a05-420a-95e0-82a00104a016",
+    "current_primary_session_key": "agent:matrix-quality:main",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-04-19T18:08:09.944536+00:00",
+    "version": 1
+  },
+  "matrix-signal": {
+    "agent_id": "matrix-signal",
+    "current_primary_session_id": "cef5448d-7abb-4a75-ab37-748e7b40618f.trajectory",
+    "current_primary_session_key": "agent:matrix-signal:session:cef5448d-7abb-4a75-ab37-748e7b40618f.trajectory",
+    "rotated_at": null,
+    "rotation_reason": null,
+    "cooldown_until": null,
+    "rotated_from_session_id": null,
+    "updated_at": "2026-04-27T23:02:10.398992+00:00",
+    "version": 9
+  }
+}

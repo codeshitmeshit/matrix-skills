@@ -110,7 +110,45 @@ cd <skill_directory>/scripts && python3 prefetch.py 2>/dev/null
 
 ---
 
-### Step 5: 加密货币行情
+### Step 5: 矩阵系统工作日报
+
+**数据源**：调用矩阵系统 Dashboard API 获取需求状态
+
+通过 HTTP 请求获取数据：
+```bash
+# 获取今日完成的和进行中的需求
+curl -s "http://localhost:3100/api/requirements/kanban" 2>/dev/null
+```
+
+早间（14:00 之前）：重点关注**今日计划任务**（pending/planning/dispatched/executing 状态）
+晚间（14:00+）：重点关注**今日完成情况**（completed 状态）
+
+1. 如果 cron trigger 文件存在且 `include_matrix_summary` 为 true，获取矩阵数据
+2. 从 API 返回的 `requirements` 数组中筛选：
+   - 早间：筛选 status 为 pending/planning/dispatched/executing 的需求
+   - 晚间：筛选 status 为 completed 且 updated_at 在今天的的需求
+3. 如果有完成或进行中的任务，按以下格式输出：
+
+```markdown
+## 🤖 矩阵系统日报
+
+### 早间任务（{今日日期}）
+{如果有任务:
+- [{需求ID}] {需求标题} - {负责人} ({状态)
+  {一句话描述})}
+{如果无任务:}
+- 今日暂无计划任务
+
+### 晚间完成（{今日日期}）
+{如果有完成:
+- [{需求ID}] {需求标题} ✅ - {负责人}
+{如果无完成:}
+- 今日暂无完成任务
+```
+
+---
+
+### Step 6: 加密货币行情
 
 **数据源**：使用 `prefetch.crypto.ETH`（火山引擎搜索结果）。包含 `content`（ETH 实时行情摘要）。
 
@@ -119,7 +157,7 @@ cd <skill_directory>/scripts && python3 prefetch.py 2>/dev/null
 
 ---
 
-### Step 6: 天气数据
+### Step 7: 天气数据
 
 **数据源**：使用 `prefetch.weather`。每个城市（北京海淀/杭州西湖/深圳南山/广州番禺）包含 `now`（实况）、`today` 和 `tomorrow`，各有 `high`、`low`、`desc`、`emoji`、`wind`。天气数据来自高德天气 API（区级精度）。
 
@@ -127,7 +165,7 @@ cd <skill_directory>/scripts && python3 prefetch.py 2>/dev/null
 
 ---
 
-### Step 7: 去重检查
+### Step 8: 去重检查
 
 组装最终输出前：
 
@@ -137,7 +175,7 @@ cd <skill_directory>/scripts && python3 prefetch.py 2>/dev/null
 
 ---
 
-### Step 8: 组装输出
+### Step 9: 组装输出
 
 > **关键——输出以标题开始，不加任何前言。**
 > 第一个字符必须是 `#`。不要有前导文字、状态更新、"数据已收集完毕"、"正在整理"等过渡句。

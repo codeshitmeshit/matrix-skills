@@ -1,0 +1,11 @@
+{
+  "agentsRoot": "/root/.openclaw/agents",
+  "excludeAgents": ["assistant-default"],
+  "maxSessionAgeHours": 168,
+  "maxEventCount": 300,
+  "minIdleMinutes": 30,
+  "cooldownMinutes": 120,
+  "registryPath": "./data/primary-session-registry.json",
+  "rotationLogPath": "./data/rotation-log.jsonl",
+  "dryRun": true
+}
